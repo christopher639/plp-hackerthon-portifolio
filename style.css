@@ -227,13 +227,11 @@ section{
     font-display: flex;
     justify-content: center;
     gap: 10rem;
-
-
 }
 .btn{
             background-color: #ffd700;
             color: #000;
-            padding: 15px;
+            padding: 10px;
             font-size: 1.2em;
             border: none;
             border-radius: 5px;
@@ -326,7 +324,16 @@ section{
 .details-container{
     padding: 1.5rem;
     flex: 1;
-    background-color: #ffcc00;
+    background-color:white;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+    border-radius: 10px;
+}
+.details-containerex{
+    padding: 1.5rem;
+    flex: 1;
+    background-color:#ffcc00;
     border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163,163,163);
     text-align: center;
@@ -336,7 +343,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     width: 300px;
-    background-color: #ffcc00;
+    background-color:white;
    height: 350px; 
     text-align: center;
     border-radius: 10px;
