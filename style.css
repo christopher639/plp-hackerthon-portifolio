@@ -473,3 +473,66 @@ footer p{
     text-align: center;
 }
 
+
+
+
+
+.hidden{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.hidden::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, and Opera */
+}
+
+.category {
+    text-align: left;
+    flex: 1;
+    margin: 5px;
+    height: 280px;
+    width: 170px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid green;
+}
+.category-hidden {
+    text-align: left;
+    flex: 1;
+    margin: 5px;
+    height: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid green;
+}
+.category:hover {
+    transform: scale(1.1);
+}
+.container a{
+    text-decoration: none;
+}
+.category img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.category .dell{
+    height: 100px;
+}
+
+.category p {
+    color: green;
+    font-weight: bold;
+}
+
