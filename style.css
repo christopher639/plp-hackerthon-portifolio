@@ -345,6 +345,7 @@ section{
 .about-exp2{
     height: 420px;
     width: 370px;
+    margin-right: 20px;
 
 
 }
@@ -497,9 +498,8 @@ margin-bottom: 2rem;
     flex-direction: column;
     height: 70vh;
     background-color: white;
-    color: black;
+    color: #007bff;
     width: 100%;
-    margin-left: 1px;
 
 }
 .contact-info-upper-container{
