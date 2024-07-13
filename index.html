@@ -18,11 +18,40 @@
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
         </div>
-    </nav>
+
+
+
+        <script>
+            function sidebar(){
+                const bar = document.querySelector(".side-bar");
+                bar.style.display = "flex";
+            }
+            function closebar(){
+                const bar = document.querySelector(".side-bar");
+                bar.style.display = "none";
+            }
+            
+            
+        </script>
+        <ul class="phone-bar">
+            <li class="menu-icon" onclick="sidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px"   viewBox="0 -960 960 960" width="26px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+        </ul>
+        <ul class="side-bar">
+            <li class="menu-close" onclick="closebar() "><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            <li><a href="#">Bundi</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">connects</a></li>
+        </ul>
+       </nav>
+    
     <nav id="hamburger-nav">
        <div class="logo">Chris Bundi</div>
        <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+        <div class="hamburger-icon" onclick="sidebar()">
         <span></span>
         <span></span>
         <span></span>
@@ -38,9 +67,36 @@
 
     <section id="profile">
         
-        <div class="section_pic-container">
-            <img src="./assets/topazpic.jpg" alt="Chrisbundi"  class="about-exp" >
-         </div>
+        <div class="pro">
+            <div class="section_pic-container">
+                <img src="./assets/secondbundi.jpg" alt="Chrisbundi"  class="about-exp" >
+             </div>
+             <div class="section_pic-container2y">
+                <div class="social-media">
+                    <a href="https://github.com/christopher639">
+                     <img src="./assets/git.jpeg" alt="My linkidin profile" class="social-media-icon">
+                    </a>
+                     <a href="https://www.linkedin.com/in/bundi-christopher-linguli-aa32a124b/">
+                         <img src="./assets/linkidinn.png" alt="linkinn icon" class="social-media-icon">
+                     </a>
+                     <a href="https://mail.google.com/mail/u/0/?ogbl#inbox">
+                         <img src="./assets/email.jpeg" alt="Email icon" class="social-media-icon">
+                     </a>
+                     <a href="#">
+                         <img src="assets/instagram.jpeg" alt="Instagram" class="social-media-icon">
+                     </a>
+ 
+                     <a href="#">
+                         <img src="assets/face.png" alt="facebook" class="social-media-icon">
+                     </a>
+                     <a href="https://www.youtube.com/channel/UClHU7d1cZzGgvE58SwHJgfg">
+                         <img src="assets/goodyoutube.png" alt="youtube" class="social-media-icon">
+                     </a>
+                   
+                    
+                 </div>
+             </div>
+        </div>
     
         <div class="section_text">
             <p class="section_text_p1">Hello, I 'm</p>
@@ -51,11 +107,24 @@
                 <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contacts Info</button>
             </div>
             <div id="social-container">
-                <img src="./assets/linkidinn.png" alt="My linkidin profile" 
-                class="icon" onclick="location.href='//linkidin.com/'">
-
-                <img src="./assets/git.jpeg" alt="My linkidin profile" 
-                class="icon" onclick="location.href='//github.com/'">
+               <div class="in-pho">
+                <a href="https://www.linkedin.com/in/bundi-christopher-linguli-aa32a124b/">
+                    <img src="./assets/likdin.png" alt="My linkidin profile" 
+                    class="social-media-iconx">
+                   </a>
+    
+                   <a href="https://github.com/christopher639">
+                    <img src="assets/git.jpeg" class="social-media-icon" alt="git hub profile">
+                   </a>
+               </div>
+            </div>
+            <div class="text-container">
+                <div class="card">
+                     <img src="assets/quote2.png" class="social-media-iconx" alt="git hub profile">
+                       
+                    <h4 class="text">"As a third-year Computer Science student at Kibabii University, I am deeply passionate about technology and programming. I am dedicated to developing innovative software solutions and continually enhancing my skills."</h4>
+                    <img src="assets/quote1.png" class="social-media-iconx" alt="git hub profile">
+                </div>
             </div>
         </div>
     </section>
@@ -65,36 +134,36 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section_pic-container2">
-                <img src="./assets/secondbundi.jpg" alt="My profile picture" class="about-exp2">
+                <img src="./assets/topazpic.jpg" alt="My profile picture" class="about-exp2">
 
             </div>
             <div class="about-details-container">
                 <div class="about-container">
-                  <div class="details-containerex">
-                    <img src="./assets/experiences.png" alt="experiences icon" class=" exp-icon">
-                    <h2 class="exp">Experience</h2>
-                    <p class="exp">2 years <br> full stack web and android developer </p>
-                  </div>
                     <div class="details-containerex">
                         <img src="./assets/experiences.png" alt="education" class=" exp-icon">
                         <h2 class="exp">Education</h2>
                         <p class="exp">Bachelor Of Science <br>Computer Science</p>
                       </div>
+                  <div class="details-containerex">
+                    <img src="./assets/experiences.png" alt="experiences icon" class=" exp-icon">
+                    <h2 class="exp">Experience</h2>
+                    <p class="exp">2 years <br> full stack web and android developer </p>
+                  </div>
+                  <div class="details-containerex">
+                    <img src="./assets/experiences.png" alt="experiences icon" class=" exp-icon">
+                    <h2 class="exp">Working</h2>
+                    <p class="exp">Software engineet at Microsoft  </p>
+                  </div>
+                  
+                    
+                  </div>
+                   <div class="details-containerexxy">
+                    <img src="./assets/experiences.png" alt="experiences icon" class=" exp-icon">
+                    <h2 class="exp">Working</h2>
+                    <p class="exp">Software engineet at Microsoft  </p>
                   </div>
 
-                  <div class="text-container">
-                   <p>Am a full stack developer  expericenced in both web and Android
-                     development. Also I have knownledge in latest technologies such as 
-                     <b>Artifial Intelligence ,generative IA and Wordpress </b>.I have strong background in 
-                     programming languages such <b>Java ,Python , Kotlin C and C++ 
-                        and frontend languages such CSS ,HTML and Javascript</b>
-                     With a passion for crafting seamless digital experiences. I 
-                     combines technical expertise with creative flair
-                     to deliver innovative solutions. Whether it's building 
-                     responsive websites or developing feature-rich Android 
-                     applications. Currently mastering  <b> machine learning and data science</b>
-                        </p>
-                </div>
+                  
             </div>
             <img src="./assets/arrow.jpg" alt="Arrow icon" class="arrow" onclick="location.href='./#experience'"  >
         </div>
@@ -227,55 +296,55 @@
                   <p>Ecommerce Website</p>
               </div>
             </a>
-                 <a href="https://bundichristopher.netlify.app/">
+                 <a href="https://chriscommerce.netlify.app/">
                   <div class="category">
                       <img src="assets/eccomerce.jpeg" alt="Bestsellers">
                       <p>Ecommerce website</p>
                   </div>
                  </a>
-                 <a href="product.html">
+                 <a href="https://chriscommerce.netlify.app/">
                     <div class="category">
                         <img src="assets/ecomsite.png" alt="eccomerce web">
                         <p>Ecommerce Website</p>
                     </div>
                   </a>
-                       <a href="product.html">
+                       <a href="https://chriscommerce.netlify.app/">
                         <div class="category">
                             <img src="assets/eccomerce.jpeg" alt="Bestsellers">
                             <p>Ecommerce website</p>
                         </div>
                        </a>
-                       <a href="product.html">
+                       <a href="https://chriscommerce.netlify.app/">
                         <div class="category">
                             <img src="assets/ecomsite.png" alt="eccomerce web">
                             <p>Ecommerce Website</p>
                         </div>
                       </a>
-                           <a href="product.html">
+                           <a href="https://chriscommerce.netlify.app/">
                             <div class="category">
                                 <img src="assets/eccomerce.jpeg" alt="Bestsellers">
                                 <p>Ecommerce website</p>
                             </div>
                            </a>
-                           <a href="product.html">
+                           <a href="https://chriscommerce.netlify.app/">
                             <div class="category">
                                 <img src="assets/ecomsite.png" alt="eccomerce web">
                                 <p>Ecommerce Website</p>
                             </div>
                           </a>
-                               <a href="product.html">
+                               <a href="https://chriscommerce.netlify.app/">
                                 <div class="category">
                                     <img src="assets/eccomerce.jpeg" alt="Bestsellers">
                                     <p>Ecommerce website</p>
                                 </div>
                                </a>
-                               <a href="product.html">
+                               <a href="https://chriscommerce.netlify.app/">
                                 <div class="category">
                                     <img src="assets/ecomsite.png" alt="eccomerce web">
                                     <p>Ecommerce Website</p>
                                 </div>
                               </a>
-                                   <a href="product.html">
+                                   <a href="https://chriscommerce.netlify.app/">
                                     <div class="category">
                                         <img src="assets/eccomerce.jpeg" alt="Bestsellers">
                                         <p>Ecommerce website</p>
@@ -287,27 +356,122 @@
                                         <p>Ecommerce Website</p>
                                     </div>
                                   </a>
-                                       <a href="https://chriscommerce.netlify.app/">
-                                        <div class="category">
-                                            <img src="assets/eccomerce.jpeg" alt="Bestsellers">
-                                            <p>Ecommerce website</p>
-                                        </div>
-                                       </a>       
+                                   <a href="https://chriscommerce.netlify.app/">
+                                   <div class="category">
+                                   <img src="assets/eccomerce.jpeg" alt="Bestsellers">
+                               <p>Ecommerce website</p>
+                        </div>
+                  </a>       
           </div>
 
     </section>
+    <section id="projects">
+
+        <p class="section_text_p1">Gallery</p>
+        <h1 class="title">Post and blogs</h1>
+
+        <div class="hidden">
+            <a href="#">
+              <div class="category">
+                  <img src="assets/secondbundi.jpg" alt="eccomerce web">
+                 <p>Computer Science student at Kibabii University, I am deeply passionate about technology and programming.</p>
+              </div>
+            </a>
+                 <a href="#">
+                  <div class="category">
+                      <img src="assets/topazpic.jpg" alt="Bestsellers">
+                      <p>Computer Science student at Kibabii University, I am deeply passionate about technology and programming.</p>
+                  </div>
+                 </a>
+                 <a href="#">
+                    <div class="category">
+                        <img src="assets/secondbundi.jpg" alt="eccomerce web">
+                        <p>Computer Science student at Kibabii University, I am deeply passionate about technology and programming.</p>
+                  
+                    </div>
+                  </a>
+                       <a href="#">
+                        <div class="category">
+                            <img src="assets/topazpic.jpg" alt="Bestsellers">
+                            <p>Computer Science student at Kibabii University, I am deeply passionate about technology and programming.</p>
+                        </div>
+                       </a>
+                       <a href="#">
+                        <div class="category">
+                            <img src="assets/secondbundi.jpg" alt="eccomerce web">
+                            <p>Computer Science student at Kibabii University, I am deeply passionate about technology and programming.</p>
+                      
+                        </div>
+                      </a>
+                           <a href="#">
+                            <div class="category">
+                                <img src="assets/topazpic.jpg" alt="Bestsellers">
+                                <p>Computer Science student at Kibabii University, I am deeply passionate about technology and programming.</p>
+                            </div>
+                           </a>
+                           <a href="#">
+                            <div class="category">
+                                <img src="assets/secondbundi.jpg" alt="eccomerce web">
+                                <p>Computer Science student at Kibabii University, I am deeply passionate about technology and programming.</p>
+                          
+                            </div>
+                          </a>
+                               <a href="#">
+                                <div class="category">
+                                    <img src="assets/topazpic.jpg" alt="Bestsellers">
+                                    <p>Computer Science student at Kibabii University, I am deeply passionate about technology and programming.</p>
+                                </div>
+                               </a>
+                               <a href="#">
+                                <div class="category">
+                                    <img src="assets/secondbundi.jpg" alt="eccomerce web">
+                                    <p>Computer Science student at Kibabii University, I am deeply passionate about technology and programming.</p>
+                              
+                                </div>
+                              </a>
+                                   <a href="#">
+                                    <div class="category">
+                                        <img src="assets/topazpic.jpg" alt="Bestsellers">
+                                        <p>Computer Science student at Kibabii University, I am deeply passionate about technology and programming.</p>
+                                    </div>
+                                   </a>
+
+          </div>
+ </section>
      <br><br>
     <section id="contacts">
         <p class="section_text_p13">Get in Touch</p>
         <h1 class="titlel">Contact Me <br> Call: +2547 4531 5644</h1> 
         <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.jpeg" alt="Email icon" class="icon contact-icon email-icon">
-                <p class="foo"><a href="bundichristopher639@gmail.com">Send me An Email</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkidinn.png" alt="linkinn icon" class="icon contact-icon">
-                <p class="foo"><a href="bundichristopher639@gmail.com">Linkidin</a></p>
+            <div class="footer-section"> 
+                <div class="social-media">
+                   <a href="https://github.com/christopher639">
+                    <img src="./assets/git.jpeg" alt="My linkidin profile" class="social-media-icon">
+                   </a>
+                    <a href="https://www.linkedin.com/in/bundi-christopher-linguli-aa32a124b/">
+                        <img src="./assets/linkidinn.png" alt="linkinn icon" class="social-media-icon">
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/?ogbl#inbox">
+                        <img src="./assets/email.jpeg" alt="Email icon" class="social-media-icon">
+                    </a>
+                    <a href="#">
+                        <img src="assets/instagram.jpeg" alt="Instagram" class="social-media-icon">
+                    </a>
+
+                    <a href="#">
+                        <img src="assets/face.png" alt="facebook" class="social-media-icon">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UClHU7d1cZzGgvE58SwHJgfg">
+                        <img src="assets/goodyoutube.png" alt="youtube" class="social-media-icon">
+                    </a>
+                    
+                    <a href="#">
+                        <img src="assets/xtwtter.png" alt="twetter" class="social-media-icon">
+                    </a>
+                    <a href="#">
+                        <img src="assets/kenyaflag.png" alt=""  class="social-media-icon">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
