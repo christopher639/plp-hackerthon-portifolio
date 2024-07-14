@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-64V0C4NND8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-64V0C4NND8');
+</script>
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris portifolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <nav id="desktop-nav">
@@ -22,6 +36,12 @@
 
 
         <script>
+              function openNav() {
+                document.querySelector(".side-bar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+
             function sidebar(){
                 const bar = document.querySelector(".side-bar");
                 bar.style.display = "flex";
@@ -34,35 +54,28 @@
             
         </script>
         <ul class="phone-bar">
-            <li class="menu-icon" onclick="sidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px"   viewBox="0 -960 960 960" width="26px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            <li class="menu-icon" onclick="closebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px"   viewBox="0 -960 960 960" width="26px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
         </ul>
-        <ul class="side-bar">
-            <li class="menu-close" onclick="closebar() "><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-            <li><a href="#">Bundi</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">connects</a></li>
-        </ul>
+       
+       </nav>
+       <nav class="side-bar">
+        <ul >
+             <li  onclick="closebar() "><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+             <li><a href="#">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#projects">Projects</a></li>
+             <li><a href="#experience">Services</a></li>
+             <li><a href="#contacts">About</a></li>
+             <li><a href="#contacts">Contacts</a></li>
+             <li><a href="#">connects</a></li>
+         </ul>
        </nav>
     
     <nav id="hamburger-nav">
-       <div class="logo">Chris Bundi</div>
-       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="sidebar()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About me</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
-         </div>
-       </div>
+       <div class="logo">Christopher B</div>
+     <ul>
+          <li onclick="sidebar()"> <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+        </ul>
     </nav>
 
     <section id="profile">
@@ -103,7 +116,7 @@
             <h1 class="title">Christopher Bundi</h1>
             <p class="section_text_p2">Full stack developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/bestcv.pdf')">Download my CV</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/mycv.pdf')">Download my CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contacts Info</button>
             </div>
             <div id="social-container">
@@ -141,18 +154,18 @@
                 <div class="about-container">
                     <div class="details-containerex">
                         <img src="./assets/experiences.png" alt="education" class=" exp-icon">
-                        <h2 class="exp">Education</h2>
-                        <p class="exp">Bachelor Of Science <br>Computer Science</p>
+                        <h2 class="text">Education</h2>
+                        <p class="text">Bachelor Of Science <br>Computer Science</p>
                       </div>
                   <div class="details-containerex">
                     <img src="./assets/experiences.png" alt="experiences icon" class=" exp-icon">
-                    <h2 class="exp">Experience</h2>
-                    <p class="exp">2 years <br> full stack web and android developer </p>
+                    <h2 class="text">Experience</h2>
+                    <p class="text">2 years <b  r> full stack web and android developer </p>
                   </div>
                   <div class="details-containerex">
                     <img src="./assets/experiences.png" alt="experiences icon" class=" exp-icon">
-                    <h2 class="exp">Working</h2>
-                    <p class="exp">Software engineet at Microsoft  </p>
+                    <h2 class="text">Working</h2>
+                    <p class="text">Software engineet at Microsoft  </p>
                   </div>
                   
                     
@@ -175,53 +188,74 @@
        <div class="experience-details-container">
         <div class="about-container">
             <div class="details-container">
-                <h2 class="experience-sub-title"> Full Stack Web development</h2>
+                <h2 class="text"> Full Stack Web Apps</h2>
                 <div class="article-container">
                     <article class="art">
-                        <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
+                        <img src="./assets/html.png" alt="Expericence icon" class="exp-icon">
                         <div>
                             <h3>HTML</h3>
-                            <p>Expericenced</p>
+                            
                         </div>
                     </article>
 
                     <article  class="art">
-                        <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
+                        <img src="./assets/css.png" alt="Expericence icon" class="exp-icon">
                         <div>
                             <h3>CSS</h3>
-                            <p>Expericenced</p>
+                            
                         </div>
                     </article>
 
                     <article  class="art">
-                        <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
+                        <img src="./assets/js.png" alt="Expericence icon" class="exp-icon">
                         <div>
                             <h3>Javascript</h3>
-                            <p>Expericenced</p>
+                            
                         </div>
                     </article>
 
                     <article  class="art">
-                        <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
+                        <img src="./assets/databse.png" alt="Expericence icon" class="exp-icon">
                         <div>
-                            <h3>MySQL Database</h3>
-                            <p>Expericenced</p>
+                            <h3>Databases</h3>
+                            
                         </div>
                     </article>
 
                     <article  class="art">
-                        <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
+                        <img src="./assets/django.png" alt="Expericence icon" class="exp-icon">
                         <div>
                             <h3>Django</h3>
-                            <p>Expericenced</p>
+                        
                         </div>
                     </article>
 
                     <article  class="art">
-                        <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
+                        <img src="./assets/wordpress.png" alt="Expericence icon" class="exp-icon">
                         <div>
                             <h3>Wordpress</h3>
-                            <p>Expericenced</p>
+                        
+                        </div>
+                    </article>
+                    <article  class="art">
+                        <img src="./assets/net.jpeg" alt="Expericence icon" class="exp-icon">
+                        <div>
+                            <h3>.NET Aspire</h3>
+                        
+                        </div>
+                    </article>
+                    <article  class="art">
+                        <img src="./assets/csharp.jpeg" alt="Expericence icon" class="exp-icon">
+                        <div>
+                            <h3>C sharp</h3>
+                        
+                        </div>
+                    </article>
+                    <article  class="art">
+                        <img src="./assets/python.jpeg" alt="Expericence icon" class="exp-icon">
+                        <div>
+                            <h3>Python</h3>
+                        
                         </div>
                     </article>
                 </div>
@@ -229,21 +263,21 @@
        
 
         <div class="details-container">
-            <h2 class="experience-sub-title"> Android Development</h2>
+            <h2 class="text"> Android Development</h2>
             <div class="article-container">
                 <article>
-                    <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
+                    <img src="./assets/kotlin.jpeg" alt="Expericence icon" class="exp-icon">
                     <div>
                         <h3>Kotlin</h3>
-                        <p>Expericenced</p>
+                        
                     </div>
                 </article>
 
                 <article>
-                    <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
+                    <img src="./assets/java.jpeg" alt="Expericence icon" class="exp-icon">
                     <div>
                         <h3>Java</h3>
-                        <p>Expericenced</p>
+                        
                     </div>
                 </article>
 
@@ -251,33 +285,27 @@
                     <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
                     <div>
                         <h3>JectPack Compose</h3>
-                        <p>Expericenced</p>
+                        
                     </div>
                 </article>
 
                 <article>
-                    <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
+                    <img src="./assets/firebase.png" alt="Expericence icon" class="exp-icon">
                     <div>
                         <h3>Firebase</h3>
-                        <p>Expericenced</p>
+                        
                     </div>
                 </article>
 
                 <article>
-                    <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
+                    <img src="./assets/studio.png" alt="Expericence icon" class="exp-icon">
                     <div>
                         <h3>Android Studio</h3>
-                        <p>Expericenced</p>
+                        
                     </div>
                 </article>
 
-                <article>
-                    <img src="./assets/tickicon.jpeg" alt="Expericence icon" class="exp-icon">
-                    <div>
-                        <h3>XML</h3>
-                        <p>Expericenced</p>
-                    </div>
-                </article>
+                
             </div>
         </div>
         <img src="./assets/arrow.jpg" alt="Arrow icon" class="arrow" onclick="location.href='./#projects'"  >
